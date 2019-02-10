@@ -520,3 +520,34 @@ body {
     background-image: url('../img/foto-contacto.jpg');
     background-size: cover;
 }
+
+/* PIE DE PAGINA */
+
+footer {
+    background: #F3F4FA;
+    padding: 54px 0;
+    text-align: center;
+}
+
+footer .copy {
+    color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+footer .footer-redes a {
+    display: inline-block;
+    padding: 0 10px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.875rem;
+    letter-spacing: 0;
+    line-height: 1.5em;
+    transition: all .3s ease-in;
+}
+
+footer .footer-redes a:hover {
+    color: #0089E0;
+}
