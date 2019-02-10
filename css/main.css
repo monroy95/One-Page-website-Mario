@@ -144,6 +144,9 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    filter: blur(3px);
+    opacity: 1;
+    visibility: inherit;
 }
 
 .main .banner-principal .texto-banner {
@@ -188,6 +191,7 @@ body {
 
 .main .proyectos {
     background: #f3f4fa;
+    /* background: #282C30; */
     padding: 108px 0 54px 0;
 }
 
