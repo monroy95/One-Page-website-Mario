@@ -299,3 +299,64 @@ body {
 .main .contenedor-slider .btn-siguiente .fa-arrow-right:hover {
     color: #0089E0;
 }
+
+/* Seccion nuestros equipo */
+
+.main .nuestro-equipo {
+    background: #F3F4FA;
+    padding-top: 54px;
+    padding-bottom: 108px;
+}
+
+.main .nuestro-equipo .equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo:first-child,
+.main .nuestro-equipo .equipo .persona-equipo:last-child {
+    position: relative;
+    top: 20px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo {
+    background: #fff;
+    padding: 50px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto {
+    width: 50%;
+    max-width: 100px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .foto img {
+    width: 100%;
+    border-radius: 100%;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #0089E0;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto h4 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #979797;
+    margin-bottom: 15px;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo .texto p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #979797;
+}
