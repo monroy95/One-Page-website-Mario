@@ -1,4 +1,5 @@
 /* Estilo Generales */
+
 * {
     margin: 0;
     padding: 0;
@@ -17,6 +18,7 @@ body {
 }
 
 /* Estilos encabezado */
+
 .menu-bar-pc {
     width: 100%;
     min-height: 68;
@@ -42,7 +44,8 @@ body {
     vertical-align: top;
 }
 
-.menu-principal a, .top-redes a {
+.menu-principal a,
+.top-redes a {
     display: inline-block;
     padding: 0 10px;
     color: #fff;
@@ -54,7 +57,8 @@ body {
     transition: all .3s ease;
 }
 
-.menu-principal a:last-child, .top-redes a:last-child {
+.menu-principal a:last-child,
+.top-redes a:last-child {
     padding-right: 0;
 }
 
@@ -62,7 +66,8 @@ body {
     font-size: 1rem;
 }
 
-.menu-principal a:hover, .top-redes a:hover {
+.menu-principal a:hover,
+.top-redes a:hover {
     color: #0089e0;
 }
 
@@ -83,15 +88,80 @@ body {
     margin-top: -68px;
 }
 
-.fixed-header .menu-principal a, .top-redes a {
+.fixed-header .menu-principal a,
+.fixed-header .top-redes a {
     color: #444444;
 }
 
-.fixed-header .menu-principal a:hover, .top-redes a:hover {
+.fixed-header .menu-principal a:hover,
+.top-redes a:hover {
     color: #0089e0;
 }
 
 /* Menu Movil */
+
 .menu-mobile {
     display: none;
+}
+
+/* Estilos MAIN */
+
+/* Banner principal */
+
+.main {
+    width: 100%;
+    margin-top: -68px;
+}
+
+.main .banner-principal {
+    width: 100%;
+    position: relative;
+}
+
+.main .banner-principal .banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/banner.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main .banner-principal .texto-banner {
+    display: inline-block;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main .banner-principal .texto-banner h2 {
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.main .banner-principal .texto-banner h1 {
+    font-size: 6.0625rem;
+    font-weight: 700;
+    line-height: 90px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.main .banner-principal .texto-banner a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #0089e0;
+    color: #fff;
+    transition: all .7s ease;
+}
+
+.main .banner-principal .texto-banner a:hover {
+    background: #fff;
+    color: #0089e0;
 }
