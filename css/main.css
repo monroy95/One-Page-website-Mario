@@ -17,6 +17,24 @@ body {
     margin: 0 auto;
 }
 
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-seccion h2 {
+    color: #0089e0;
+    font-size: 3.215rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.titulo-seccion p {
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
 /* Estilos encabezado */
 
 .menu-bar-pc {
@@ -164,4 +182,31 @@ body {
 .main .banner-principal .texto-banner a:hover {
     background: #fff;
     color: #0089e0;
+}
+
+/* Proyectos */
+
+.main .proyectos {
+    background: #f3f4fa;
+    padding: 108px 0 54px 0;
+}
+
+.main .proyectos .galeria-proyectos {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #ccc;
+}
+
+.main .proyectos .galeria-proyectos .proyecto {
+    width: 32%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.main .proyectos .galeria-proyectos .proyecto img {
+    width: 100%;
+    vertical-align: top;
 }
