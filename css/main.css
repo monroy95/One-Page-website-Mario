@@ -1,4 +1,4 @@
-/* Estilo Generales */
+/*GENERALES*/
 
 * {
     margin: 0;
@@ -23,8 +23,8 @@ body {
 }
 
 .titulo-seccion h2 {
-    color: #0089e0;
-    font-size: 3.215rem;
+    color: #0089E0;
+    font-size: 3.125rem;
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -35,7 +35,7 @@ body {
     font-weight: 400;
 }
 
-/* boton volver arriba */
+/*Boton Volver Arriba*/
 
 .btn-volver-arriba {
     display: inline-block;
@@ -61,15 +61,15 @@ body {
 
 .btn-volver-arriba a .fa-arrow-up {
     font-size: 1rem;
-    line-height: 40px;
     color: #fff;
+    line-height: 40px;
 }
 
-/* Estilos encabezado */
+/* ------ ENCABEZADO ------ */
 
 .menu-bar-pc {
     width: 100%;
-    min-height: 68;
+    min-height: 68px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     padding: 0 36px;
     background: transparent;
@@ -77,7 +77,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* z.index funciona ala mano con position */
     position: relative;
     z-index: 100;
 }
@@ -99,9 +98,9 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 0.876rem;
     letter-spacing: 0;
-    line-height: 1.5rem;
+    line-height: 1.5em;
     transition: all .3s ease;
 }
 
@@ -111,12 +110,12 @@ body {
 }
 
 .top-redes a i {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 .menu-principal a:hover,
 .top-redes a:hover {
-    color: #0089e0;
+    color: #0089E0;
 }
 
 .fixed-header {
@@ -143,16 +142,16 @@ body {
 
 .fixed-header .menu-principal a:hover,
 .top-redes a:hover {
-    color: #0089e0;
+    color: #0089E0;
 }
 
-/* Menu Movil */
+/*Mobile menu*/
 
 .menu-mobile {
     display: none;
 }
 
-/* Estilos MAIN */
+/* ------ MAIN ------ */
 
 /*Banner principal*/
 
@@ -174,7 +173,7 @@ body {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    filter: blur(3px) grayscale(20%);
+    filter: blur(2px) grayscale(20%);
 }
 
 .main .banner-principal .texto-banner {
@@ -215,7 +214,7 @@ body {
     color: #0089E0;
 }
 
-/* Proyectos */
+/*Proyectos*/
 
 .main .proyectos {
     background: #F3F4FA;
@@ -242,12 +241,47 @@ body {
     vertical-align: top;
 }
 
-/* Modal fondos proyectos*/
+/*Modal fotos proyectos*/
 
-/* Seccion acerca de */
+.modal {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal img {
+    width: 90%;
+    max-width: 600px;
+}
+
+.modal .btn-cerrar .fa-times {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    right: 20px;
+    background: #0089E0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal .btn-cerrar .fa-times {
+    color: #fff;
+    font-size: 1rem;
+    line-height: 50px;
+}
+
+/*Acerca de*/
 
 .main .acerca-de {
-    background: #f3f4fa;
+    background: #F3F4FA;
 }
 
 .main .acerca-de .contenedor {
@@ -277,7 +311,7 @@ body {
     font-weight: 400;
 }
 
-/* Seccion slider */
+/*Slider*/
 
 .main .contenedor-slider {
     width: 100%;
@@ -321,17 +355,17 @@ body {
     right: 2%;
 }
 
-.main .contenedor-slider .btn-anterior .fa-arrow-left,
-.main .contenedor-slider .btn-siguiente .fa-arrow-right {
+.main .contenedor-slider .btn-anterior i,
+.main .contenedor-slider .btn-siguiente i {
     color: #fff;
 }
 
-.main .contenedor-slider .btn-anterior .fa-arrow-left:hover,
-.main .contenedor-slider .btn-siguiente .fa-arrow-right:hover {
+.main .contenedor-slider .btn-anterior i:hover,
+.main .contenedor-slider .btn-siguiente i:hover {
     color: #0089E0;
 }
 
-/* Seccion nuestros equipo */
+/*Nuestro equipo*/
 
 .main .nuestro-equipo {
     background: #F3F4FA;
@@ -346,12 +380,6 @@ body {
     justify-content: space-between;
 }
 
-.main .nuestro-equipo .equipo .persona-equipo:first-child,
-.main .nuestro-equipo .equipo .persona-equipo:last-child {
-    position: relative;
-    top: 20px;
-}
-
 .main .nuestro-equipo .equipo .persona-equipo {
     background: #fff;
     padding: 50px;
@@ -359,6 +387,12 @@ body {
     max-width: 300px;
     box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.2);
     text-align: center;
+}
+
+.main .nuestro-equipo .equipo .persona-equipo:first-child,
+.main .nuestro-equipo .equipo .persona-equipo:last-child {
+    position: relative;
+    top: 20px;
 }
 
 .main .nuestro-equipo .equipo .persona-equipo .foto {
@@ -380,19 +414,19 @@ body {
 }
 
 .main .nuestro-equipo .equipo .persona-equipo .texto h4 {
-    font-size: 1.8rem;
-    font-weight: 400;
     color: #979797;
+    font-size: 0.8rem;
+    font-weight: 400;
     margin-bottom: 15px;
 }
 
 .main .nuestro-equipo .equipo .persona-equipo .texto p {
-    font-size: 0.9rem;
-    font-weight: 500;
     color: #979797;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
-/* Seccion informacion Extra */
+/*Sección información extra*/
 
 .main .info-extra {
     background: #191919;
@@ -410,7 +444,7 @@ body {
     width: 50%;
 }
 
-.main .info-extra .contenedor .contenido-info {
+.main .info-extra .contenedor .info .contenido-info {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -432,7 +466,7 @@ body {
 }
 
 .main .info-extra .contenedor .info .contenido-info .texto-info {
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .main .info-extra .contenedor .info .contenido-info .texto-info h4 {
@@ -446,8 +480,7 @@ body {
 .main .info-extra .contenedor .info .contenido-info .texto-info p {
     color: #979797;
     font-size: 1rem;
-    font-weight: 300;
-    text-align: left;
+    font-weight: 400;
 }
 
 .main .info-extra .contenedor .foto {
@@ -459,19 +492,19 @@ body {
     background-size: cover;
 }
 
-/* Seccion contacto */
+/*Contacto*/
 
 .main .contacto {
     padding: 190px 0;
-    background-image: url('../img/bg-contacto.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-image: url('../img/bg-contacto.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;*/
 }
 
 .main .contacto .contenedor-formulario {
     background: #fff;
-    min-width: 485px;
+    min-height: 485px;
     border-radius: 3px;
     box-shadow: 0px 9px 32px -1px rgba(0, 0, 0, 0.3);
     display: flex;
@@ -519,9 +552,10 @@ body {
     outline: none;
     width: 100%;
     max-width: 100%;
-    max-height: 100px;
+    max-height: 88px;
     min-height: 88px;
     color: #979797;
+    margin-bottom: 10px;
     font-size: 0.9rem;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
@@ -534,6 +568,7 @@ body {
     border: 1px solid #0089E0;
     padding: 8px;
     background: #0089E0;
+    color: #fff;
     font-size: 0.9rem;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
@@ -552,11 +587,21 @@ body {
     background-size: cover;
 }
 
-/* PIE DE PAGINA */
+/*Validacion formulario*/
+
+.main .contacto .contenedor-formulario .formulario form .error {
+    display: none;
+    color: #ff8c8c;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* ------ PIE DE PÁGINA ------ */
 
 footer {
-    background: #F3F4FA;
-    padding: 54px 0;
+    background: #f3f4fa;
+    padding: 25px 0;
     text-align: center;
 }
 
@@ -576,17 +621,18 @@ footer .footer-redes a {
     font-size: 0.875rem;
     letter-spacing: 0;
     line-height: 1.5em;
-    transition: all .3s ease-in;
+    transition: all .3s ease;
+    font-size: 2rem;
 }
 
 footer .footer-redes a:hover {
     color: #0089E0;
 }
 
-/* MEDIA QUERIES */
+/* ----- MEDIA QUERIES ----- */
 
 @media screen and (max-width:1040px) {
-    /* Seccion nuestro equipo */
+    /*Nuestro equipo*/
     .main .nuestro-equipo .titulo-seccion {
         margin-bottom: 60px;
     }
@@ -603,7 +649,7 @@ footer .footer-redes a:hover {
     .main .nuestro-equipo .equipo .persona-equipo .foto {
         margin-right: 20px;
     }
-    /* Seccion informacion extra */
+    /*Sección información extra*/
     .main .info-extra .contenedor .info {
         width: 100%;
     }
@@ -613,7 +659,7 @@ footer .footer-redes a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    /* Seccion encabezado */
+    /*Encabezado*/
     .menu-bar-pc {
         display: none;
     }
@@ -633,10 +679,10 @@ footer .footer-redes a:hover {
         justify-content: space-between;
         align-items: center;
     }
-    .menu-mobile .logo {
+    .menu-mobile .barra .logo {
         width: 40px;
     }
-    .menu-mobile .barra .fa-bars {
+    .menu-mobile .barra a i {
         font-size: 1.4rem;
         color: #444444;
     }
@@ -650,14 +696,13 @@ footer .footer-redes a:hover {
         border-right: 1px solid rgba(204, 204, 204, 0.5);
         box-shadow: 0px 1px 5px -1px rgba(0, 0, 0, 0.2);
         background: #fff;
-        /* padding: 0; */
         text-align: center;
     }
     .menu-mobile .menu-principal a {
         display: block;
         padding: 10px;
         color: #444444;
-        border: 1px solid rgba(204, 204, 204, 0.5);
+        border-bottom: 1px solid rgba(204, 204, 204, 0.5);
     }
     .menu-mobile .menu-principal a:hover {
         background: #f7f7f7;
@@ -665,17 +710,17 @@ footer .footer-redes a:hover {
     .fixed-header {
         display: none;
     }
-    /* seccion Main */
+    /*Main*/
     .main {
         margin-top: 0;
     }
-    /* Seccion acerca de */
+    /*Acerca de*/
     .main .acerca-de .contenedor .titulo-seccion,
     .main .acerca-de .contenedor .texto-acerca-de {
         width: 100%;
         text-align: center;
     }
-    /* Seccion contacto */
+    /*Contacto*/
     .main .contacto .contenedor-formulario .formulario {
         width: 100%;
         text-align: center;
@@ -691,25 +736,25 @@ footer .footer-redes a:hover {
 }
 
 @media screen and (max-width:550px) {
-    /* Seccion banner principal */
+    /*Banner principal*/
     .main .banner-principal .texto-banner h1 {
         font-size: 4rem;
     }
-    /* Titulos secciones */
+    /*Titulo secciones*/
     .titulo-seccion h2 {
         font-size: 2.125rem;
     }
-    /* Proyectos */
+    /*Proyectos*/
     .main .proyectos .galeria-proyectos .proyecto {
         width: 49%;
     }
-    /* Nuestro equipo */
+    /*Nuestro equipo*/
     .main .nuestro-equipo .equipo .persona-equipo {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    /* Infomacion Extra */
+    /*Sección información extra*/
     .main .info-extra .contenedor .info .contenido-info {
         flex-wrap: wrap;
         text-align: center;
@@ -718,8 +763,7 @@ footer .footer-redes a:hover {
         width: 100%;
         margin-bottom: 25px;
     }
-    .main .info-extra .contenedor .info .contenido-info .icono-info .fa-paint-brush,
-    .main .info-extra .contenedor .info .contenido-info .icono-info .fa-laptop {
+    .main .info-extra .contenedor .info .contenido-info .icono-info i {
         font-size: 3.5rem;
     }
     .main .info-extra .contenedor .info .contenido-info .texto-info {

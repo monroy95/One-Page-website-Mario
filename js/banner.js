@@ -1,14 +1,16 @@
 $(document).ready(function () {
+
     var banner = $('#banner');
 
-    // Verifinir altura dinamica para el banner
-    function altura_banner() {
+    // Definir altura dinámica para el banner
+    function alturaBanner() {
+
         var vpaltura = $(window).height();
         banner.css('height', vpaltura);
+
     }
+    alturaBanner();
 
-    altura_banner();
+    $(window).resize(alturaBanner);
 
-    // Vuelve a calcular cuando se cambia el tamaño de la ventana
-    $(window).resize(altura_banner);
 });
